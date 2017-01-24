@@ -3,6 +3,9 @@ Cloud Performance Platform
 
 Cloud Performance Platform is an openresty project, provide easy ui to remote profile web service and generate svg output.
 
+![](https://github.com/robbinfan/cloud-perf/blob/master/index.png)
+
+
 Now, it provide 6 profile types:
  - CPU
  - HEAP
