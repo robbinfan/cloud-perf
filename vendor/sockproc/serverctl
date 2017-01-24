@@ -1,0 +1,35 @@
+#!/bin/sh
+
+ARGV="$@"
+
+SERVER_PATH=$(pwd)
+SERVER_CTL="$SERVER_PATH/sockproc /tmp/resty.sock $SERVER_PATH/sockproc.pid"
+
+ERROR=0
+if [ "x$ARGV" = "x" ] ; then
+    ARGV="-h"
+fi
+
+
+startserver()
+{
+        for i in 1 2 3
+        do
+                $SERVER_CTL
+                ERROR=$?
+                if [ $ERROR = 0 ] ; then
+                        break;
+                fi
+        done
+}
+
+case $ARGV in
+start)
+        startserver
+        ;;
+stop)
+        kill `cat $SERVER_PATH/sockproc.pid`
+        ;;
+esac
+
+exit $ERROR

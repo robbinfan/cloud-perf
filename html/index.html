@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="applicable-device" content="pc,mobile">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cloud Performance Platform</title>
+    <link href="/static/bootstrap.min.css?bootstrap=3.3.0.1" rel="stylesheet" media="screen">
+    <link href="/static/bootstrap-select.min.css" rel="stylesheet" media="screen">
+    <link href="/static/index.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <form class="x-sform" method="get" action="/q">
+        <nav class="navbar navbar-default " role="navigation">
+        </nav>
+      </form>
+      <form class="x-sform" name="xsform">
+        <div class="container">
+          <div class="div-profile-box col-lg-offset-2 col-lg-8">
+            <div class="logo">
+              <img src="/static/logo.png">
+            </div>
+            <div class="input-group">
+              <input placeholder="Host:Port" autocomplete="off" type="text" class="form-control x-remote" name="remote">
+	            <select class="selectpicker" name="selectpicker">
+		            <option>CPU</option>
+		            <option>HEAP</option>
+		            <option>CPU FlameGraph</option>
+		            <option>HEAP FlameGraph</option>
+		            <option>Growth</option>
+		            <option>Growth FlameGraph</option>
+	            </select>
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="submit">Run</button>
+              </span>
+	          </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--foot-->
+    <div class="footer">
+      <span>@CopyRight 2017 <a href="https://github.com/robbinfan" target="_Blank">robbinfan</a></span>
+    </div>
+    <!--foot-->
+    <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.0.min.js"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/bootstrap/3.1.1/bootstrap.min.js"></script>
+    <script src="/static/index.js"></script>
+    <script src="/static/bootstrap-select.min.js"></script>
+    <script>$(function(){$('.x-remote').focus();});setTimeout(function(){$('.good').fadeIn('slow');}, 500);</script>
+  </body>
+</html>

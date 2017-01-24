@@ -1,0 +1,55 @@
+@media (min-width: 1024px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+h1{
+    font-size:24px;
+}
+.col-lg-2{
+/*width:11.6667%;*/
+}
+table {
+width:100%;
+}
+* {
+    margin: 0;
+    word-wrap: break-word;
+    word-break:break-all;
+}
+a:link{text-decoration:none;}
+a:visited{text-decoration:none;}
+a:active{text-decoration:none;}
+html, body {
+    font-family: Arial, '微软雅黑', '宋体', sans-serif
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+#wrapper {
+    height: auto !important;
+    margin: 0 auto -40px;
+    min-height: 100%;
+    padding-bottom:40px;
+}
+.m0{
+margin:0px;
+}
+.div-search-box{margin-top: 50px; }
+.div-search-box .logo img{margin-left: -50px;}
+.div-search-box .logo{text-align: center;}
+.copyright{text-align: center;color: gray;padding-top: 10px;}
+.good{text-align: center; padding-top: 30px; font-size: 0.9em; color: gray; display:none;}
+.x-item .tail{color:gray; font-size: .8em;}
+.x-item .title{font-size:1.1em;}
+.x-item .ctime{font-size: .9em; color: gray; }
+.x-item .files{font-size: .9em;}
+.x-item .files li{list-style-type: none;}
+.x-item .files ul{padding: 5px 5px 0 0;}
+.x-searchbar{width: 260px; margin-left: 10px;}
+.x-item {overflow: hidden; word-break: break-all;}
+.nav-foot{margin-top:50px;}
+.div-ads{}
+.highlight{color: red;}
